@@ -19,6 +19,7 @@
 <html>
 <head>
     <title>Login Form</title>
+    <%@ include file="partials/head.jsp"%>
 </head>
 <body>
 <%--TODO: THIS INCLUDES THE NAV FILE FROM PARTIALS DIRECTORY--%>
