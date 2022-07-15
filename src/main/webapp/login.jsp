@@ -1,3 +1,7 @@
+<%@ page import="java.util.Arrays" %>
+<%@ page import="java.lang.reflect.Array" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: kjorgeron0819
@@ -33,6 +37,20 @@
     <input type="password" id="password" name="pass"/>
     <button type="submit">Submit</button>
 </form>
+
+<%--TODO:(test/learning) LOOKING AT USING C:--%>
+<%--<% request.setAttribute("numbers" ,new int[] {1, 2, 3, 4, 5});%>--%>
+<%--<c:forEach var="num" items="${numbers}">--%>
+<%--<c:if test="${param.user == null}">--%>
+<%--    <c:if test="${num <= 3}">--%>
+<%--        <div>${num}</div>--%>
+<%--    </c:if>--%>
+
+<%--    <c:if test="${num > 3}">--%>
+<%--        <div> ${num * 10} </div>--%>
+<%--    </c:if>--%>
+<%-- </c:if>--%>
+<%--</c:forEach>--%>
 
 </body>
 </html>
