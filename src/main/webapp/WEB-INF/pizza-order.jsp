@@ -51,6 +51,6 @@
     <br>
     <button type="submit">Submit</button>
 </form>
-<% System.out.println();%>
+
 </body>
 </html>
