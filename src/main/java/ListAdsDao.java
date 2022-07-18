@@ -11,6 +11,11 @@ public class ListAdsDao implements Ads {
         return ads;
     }
 
+    @Override
+    public void insert(Ad ads) {
+        this.ads.add(ads);
+    }
+
     private List<Ad> generateAds() {
         List<Ad> ads = new ArrayList<>();
         ads.add(new Ad(
