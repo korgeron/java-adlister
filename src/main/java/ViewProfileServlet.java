@@ -21,6 +21,7 @@ public class ViewProfileServlet extends HttpServlet {
         } else{
             req.getRequestDispatcher("/profile.jsp").forward(req, res);
         }
+
     }
 
     @Override
