@@ -9,7 +9,11 @@
     <jsp:include page="partials/navbar.jsp" />
 
     <div class="container">
-        <h1>Viewing your profile.</h1>
+        <h1>Welcome ${loggedIn}</h1>
+
+        <form action="/profile" method="POST">
+            <button type="submit" name="logout">LOGOUT!</button>
+        </form>
     </div>
 
 </body>
