@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS adlister_db;
 CREATE DATABASE adlister_db;
 USE adlister_db;
 
-DROP USER IF EXISTS 'adlister-user'@'localhost@';
+DROP USER IF EXISTS 'adlister-user'@'localhost';
 CREATE USER 'adlister-user'@'localhost' IDENTIFIED BY 'codeup';
 GRANT ALL ON adlister_db.* TO 'adlister-user'@'localhost';
 
