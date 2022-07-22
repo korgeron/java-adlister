@@ -2,11 +2,11 @@ package com.codeup.adlister.dao;
 
 import com.codeup.adlister.models.User;
 import com.mysql.cj.jdbc.Driver;
-
 import java.sql.*;
 
+
 public class MySQLUsersDao implements Users {
-    private Connection connection;
+    private Connection connection = null;
 
     public MySQLUsersDao(Config config) {
         try {
@@ -17,7 +17,7 @@ public class MySQLUsersDao implements Users {
                 config.getPassword()
             );
         } catch (SQLException e) {
-            throw new RuntimeException("Error connecting to the database!", e);
+            throw new RuntimeException("Error connecting to the database from UserDao!", e);
         }
     }
 
